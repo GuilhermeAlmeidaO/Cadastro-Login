@@ -102,16 +102,11 @@ const Fields = styled.div`
         border: 1px solid transparent;
         padding: 5px;
         border-radius: 5px;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
     }
 
     & label.showPass_button:hover{
-        border: 1px solid #429988;
+        cursor: pointer;
     }
 
     & label.showPass_button p{
@@ -120,12 +115,19 @@ const Fields = styled.div`
 
     @media (max-width: 768px) {
         & label.label_data{
-            width: 95%;
+            width: 45%;
         }
 
         & label.label_data input{
             width: 70%;
         }
+
+    }
+
+    @media (max-width: 768px) {
+        & label.label_data{
+            width: 90%;
+    }
 
     }
 
@@ -146,7 +148,7 @@ function SingUp() {
         <Container>
             <ToSingIn>
                 <h1>Bem vindo(a)</h1>
-                <p>Para continuar conectado(a) ao nosso sistema faça login ou se registre-se</p>
+                <p>Para continuar conectado(a) ao nosso sistema, faça login ou se registre-se</p>
                 <Link to={'/singin'}>
                     <button>Entre</button>
                 </Link>

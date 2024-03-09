@@ -89,7 +89,7 @@ const Fields = styled.div`
     & label{
         background-color: rgba(0,0,0,0.1);
         padding: 10px;
-        width: 60%;
+        width: 51%;
         border-radius: 5px;
     }
     
@@ -105,7 +105,7 @@ const Fields = styled.div`
     }
     
     .forget_password{
-        width: 60%;
+        width: 55%;
         text-align: right;
         color: #429988;
         font-size: 0.7rem;
@@ -114,7 +114,7 @@ const Fields = styled.div`
 
     @media (max-width: 768px) {
         & label{
-            width: 95%;
+            width: 45%;
         }
 
         & input{
@@ -122,7 +122,13 @@ const Fields = styled.div`
         }
 
         .forget_password{
-            width: 95%;
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 425px) {
+        & label{
+            width: 90%;
         }
     }
 
@@ -138,7 +144,7 @@ function SingIn() {
         <Container>
             <ToSingUp>
                 <h1>Bem vindo(a)</h1>
-                <p>Para continuar conectado(a) ao nosso sistema faça login ou se registre-se</p>
+                <p>Para continuar conectado(a) ao nosso sistema, faça login ou se registre-se</p>
                 <Link to={'/singup'}>
                     <button>Cadastre-se</button>
                 </Link>

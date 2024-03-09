@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SingIn from './Router/singIn';
 import SingUp from './Router/singUp';
+import Loged from './Router/loged';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,7 @@ root.render(
         <Route path='/' element={<App/>}/>
         <Route path='/singin' element={<SingIn/>}/>
         <Route path='/singup' element={<SingUp/>}/>
-
+        <Route path='/loged' element={<Loged/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
