@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './Router/App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import SingIn from './Router/singIn';
+import SingUp from './Router/singUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<App/>}/>
+        <Route path='/singin' element={<SingIn/>}/>
+        <Route path='/singup' element={<SingUp/>}/>
+
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
