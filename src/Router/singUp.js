@@ -16,7 +16,7 @@ const ToSingIn = styled.div`
     padding: 10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    widht: 30%;
+    width: 50%;
 
     & h1{
         color: #fff;
@@ -24,6 +24,16 @@ const ToSingIn = styled.div`
 
     & p{
         color: #fff;
+    }
+
+    @media (max-width: 425px) {
+        & h1{
+            font-size: 1.5rem;
+        }
+    
+        & p{
+            font-size: 15px;
+        }
     }
 
     & button{
@@ -54,6 +64,12 @@ const Fields = styled.div`
     & h1{
         text-align: center;
         color: #58AF9C;
+    }
+
+    @media (max-width: 425px) {
+        & h1{
+            font-size: 1.5rem;
+        }
     }
 
     & button#create{
@@ -100,6 +116,17 @@ const Fields = styled.div`
 
     & label.showPass_button p{
         margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        & label.label_data{
+            width: 95%;
+        }
+
+        & label.label_data input{
+            width: 70%;
+        }
+
     }
 
     & input{

@@ -16,7 +16,7 @@ const ToSingUp = styled.div`
     padding: 10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    widht: 30%;
+    width: 50%;
 
     & h1{
         color: #fff;
@@ -24,6 +24,16 @@ const ToSingUp = styled.div`
 
     & p{
         color: #fff;
+    }
+
+    @media (max-width: 425px) {
+        & h1{
+            font-size: 1.5rem;
+        }
+    
+        & p{
+            font-size: 15px;
+        }
     }
 
     & button{
@@ -56,6 +66,12 @@ const Fields = styled.div`
         color: #58AF9C;
     }
 
+    @media (max-width: 425px) {
+        & h1{
+            font-size: 1.5rem;
+        }
+    }
+
     & button#join{
         border: 1px solid transparent;
         background-color: #58AF9C;
@@ -76,7 +92,7 @@ const Fields = styled.div`
         width: 60%;
         border-radius: 5px;
     }
-
+    
     & input{
         border: 0;
         outline: none;
@@ -94,6 +110,20 @@ const Fields = styled.div`
         color: #429988;
         font-size: 0.7rem;
         margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        & label{
+            width: 95%;
+        }
+
+        & input{
+            width: 70%;
+        }
+
+        .forget_password{
+            width: 95%;
+        }
     }
 
     .forget_password:hover{
